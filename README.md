@@ -2,7 +2,7 @@
 
 Dashboard interactivo para análisis de comunidades microbianas de sedimento y plancton usando datos de metabarcoding 16S (procariotas) y 18S (eucariotas).
 
-Desarrollado como herramienta de análisis para tesis de grado — Universidad de Buenos Aires, 2026.
+Desarrollado como herramienta de análisis para tesis de grado — UNER, 2026.
 
 ---
 
