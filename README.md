@@ -17,8 +17,8 @@ Desarrollado como herramienta de análisis para tesis de grado — UNER, 2026.
 
 ```bash
 # 1. Clonar el repositorio
-git clone https://github.com/tu-usuario/dashboard-analisis-microbioma.git
-cd dashboard-microbioma
+git clone https://github.com/priscilaInderkumer99/dashboard-microbiomas.git
+cd dashboard-microbiomas
 
 # 2. Crear entorno virtual
 python3 -m venv venv
@@ -38,9 +38,10 @@ El dashboard se abre automáticamente en el navegador en `http://localhost:8501`
 ## Estructura del proyecto
 
 ```
-dashboard-analisis-microbioma/
+dashboard-microbiomas/
 ├── app.py                  # Entrada principal
 ├── requirements.txt        # Dependencias
+├── MANUAL_USUARIO.md       # Guía de uso para usuarios
 ├── utils/
 │   ├── data_loader.py      # Carga y procesamiento de archivos
 │   └── diversity.py        # Cálculo de métricas de diversidad
@@ -110,20 +111,20 @@ SampleID    Site    Class     pH     Temp_C    ...
 ## Dependencias principales
 
 ```
-streamlit
-pandas
-numpy
-plotly
-scipy
-scikit-learn
-statsmodels
-matplotlib
-seaborn
+streamlit==1.31.0
+pandas==2.1.4
+numpy==1.26.3
+plotly==5.18.0
+scipy==1.11.4
+scikit-learn==1.4.0
+statsmodels==0.14.1
+matplotlib==3.8.2
+seaborn==0.13.1
 ```
 
 ---
 
 ## Autora
 
-**Priscila Inderkumer**  
+**Priscila Inderkumer**
 2026
