@@ -6,13 +6,28 @@ Este dashboard es una herramienta interactiva para analizar comunidades microbia
 
 ---
 
-## Cómo correr el dashboard
+## Cómo instalar y correr el dashboard
 
-Abrí una terminal y ejecutá:
+### Requisitos previos
+- Python 3.8 o superior instalado en tu computadora
+- Conexión a internet para la instalación inicial
+
+### Pasos
 
 ```bash
-cd /home/ps/Priscila/dashboard-microbioma
-source venv/bin/activate
+# 1. Clonar el repositorio
+git clone https://github.com/priscilaInderkumer99/dashboard-microbiomas.git
+cd dashboard-microbiomas
+
+# 2. Crear entorno virtual
+python3 -m venv venv
+source venv/bin/activate        # En Linux/Mac
+venv\Scripts\activate           # En Windows
+
+# 3. Instalar dependencias
+pip install -r requirements.txt
+
+# 4. Correr el dashboard
 streamlit run app.py
 ```
 
@@ -177,5 +192,5 @@ Sí. El tab de comparación 16S vs 18S solo se activa cuando tenés ambos, pero 
 
 ## Autora
 
-**Priscila Inderkumer**  
+**Priscila Inderkumer**
 2026
