@@ -17,7 +17,7 @@ Desarrollado como herramienta de análisis para tesis de grado — UNER, 2026.
 
 ```bash
 # 1. Clonar el repositorio
-git clone https://github.com/priscilaInderkumer99/dashboard-microbiomas.git
+git clone https://github.com/priscilaInderkumer99/dashboard-analisis-microbiomas.git
 cd dashboard-microbiomas
 
 # 2. Crear entorno virtual
