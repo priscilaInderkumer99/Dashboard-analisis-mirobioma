@@ -155,21 +155,21 @@ if files_uploaded and otu_data:
             merged_data['18S'] = merge_with_metadata(df_composition, metadata_18s)
 
     # Renderizar tabs
-    t1, t2, t3, t4, t5, t6, t7, t8, t9 = st.tabs([
+    st_tab1, st_tab2, st_tab3, st_tab4, st_tab5, st_tab6, st_tab7, st_tab8, st_tab9 = st.tabs([
         "📊 Composición", "👑 Dominancia", "⚖️ Comparativos",
         "🗺️ Espacial",    "🔢 Multivariados", "💎 Rareza",
         "📐 Ratios",      "🔬 16S vs 18S",   "📈 GLMM"
     ])
 
-    with t1: tab1.render(composition_data)
-    with t2: tab2.render(composition_data, diversity_data)
-    with t3: tab3.render(diversity_data)
-    with t4: tab4.render(composition_data, diversity_data)
-    with t5: tab5.render(composition_data)
-    with t6: tab6.render(composition_data)
-    with t7: tab7.render(composition_data)
-    with t8: tab8.render(composition_data, diversity_data)
-    with t9: tab9.render(diversity_data, merged_data, metadata_16s, metadata_18s)
+    with st_tab1: tab1.render(composition_data)
+    with st_tab2: tab2.render(composition_data, diversity_data)
+    with st_tab3: tab3.render(diversity_data)
+    with st_tab4: tab4.render(composition_data, diversity_data, {'16S': metadata_16s, '18S': metadata_18s})
+    with st_tab5: tab5.render(composition_data)
+    with st_tab6: tab6.render(composition_data)
+    with st_tab7: tab7.render(composition_data)
+    with st_tab8: tab8.render(composition_data, diversity_data)
+    with st_tab9: tab9.render(diversity_data, merged_data, metadata_16s, metadata_18s)
 
 else:
     st.info("""
