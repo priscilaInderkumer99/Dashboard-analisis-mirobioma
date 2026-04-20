@@ -35,14 +35,14 @@ def render(composition_data):
         df_relative = df_plot.div(df_plot.sum(axis=1), axis=0).fillna(0)
 
         fig = go.Figure()
-        colors = px.colors.qualitative.Set3[:len(df_relative.columns)]
+        colors = px.colors.qualitative.Set3
 
         for idx, phylum in enumerate(df_relative.columns):
             fig.add_trace(go.Bar(
                 name=phylum,
                 x=df_relative.index,
                 y=df_relative[phylum],
-                marker_color=colors[idx]
+                marker_color=colors[idx % len(colors)]
             ))
 
         fig.update_layout(
