@@ -7,7 +7,7 @@ import streamlit as st
 import plotly.express as px
 
 
-def render(composition_data, diversity_data):
+def render(composition_data, diversity_data, metadata_dict=None):
     st.header("🗺️ Análisis Espacial por Sitio de Muestreo")
 
     dataset_choice = st.selectbox(
